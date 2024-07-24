@@ -1,0 +1,59 @@
+main {
+    width: 100vw;
+    height: 92vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: radial-gradient(#22398A, #1D2B5C);
+    color: #fff;
+}
+
+.main-text {
+    display: flex;  
+    flex-direction: column;
+    line-height: 1.1;
+    
+    .title {
+        font-weight: 900;
+    }
+
+    #angular {
+        font-size: 13.5rem;
+    }
+
+    #developer {
+        font-size: 15.5rem;
+    }
+
+    .about-me {
+        font-size: 28px;
+        font-weight: 700;
+    }
+
+    #description {
+        text-align: end;
+    }
+
+    .top-text {
+        display: flex;
+        align-items: center;
+        gap: 30px;
+
+        .social-icons {
+            display: flex;
+            align-items: center;
+            gap: 30px;
+            font-size: 10rem;
+            
+            #icon {
+                color: #FF6C6C;
+                transition: transform .2s;
+
+                &:hover {
+                    cursor: pointer;
+                    transform: scale(1.1);
+                }
+            }
+        }
+    }
+}
