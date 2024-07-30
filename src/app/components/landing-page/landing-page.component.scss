@@ -57,3 +57,19 @@ main {
         }
     }
 }
+
+@media (max-width: 1024px) {
+    .main-text {
+        .about-me {
+            font-size: 24px;
+        }
+    
+        #angular {
+            font-size: 10.5rem;
+        }
+
+        #developer {
+            font-size: 13.5rem;
+        }
+    }
+}
