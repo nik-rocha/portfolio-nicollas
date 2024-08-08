@@ -187,3 +187,65 @@ main {
         }
     }
 }
+
+@media (max-width: 560px) {
+    .description-top {
+        padding: 4.2rem 2.2rem 0 2.2rem;
+
+        .description-container {
+            gap: 30px;
+
+            .container-left {
+                flex-direction: column;
+                gap: 2rem;
+
+                img {
+                    width: 110%;
+                }
+
+                .social-icons {
+                    margin-top: 1.2rem;
+                }
+            }
+
+            .container-right {
+
+                h1 {
+                    font-size: 2.8rem;
+                }
+
+                p {
+                    font-size: 1.5rem;
+                }
+            }
+        }
+    }
+
+    .description-bottom {
+
+        .email-container {
+            
+            h2 {
+                font-size: 2.6rem;
+            }
+
+            .email-area {
+                flex-direction: column;
+                gap: 20px;
+
+                .email-box {
+                    width: 110%;
+                    height: 46px;
+                    font-size: 1.9rem;
+                }
+
+                .copy-email {
+                    width: 52%;
+                    height: 45px;
+                    border-radius: 10px;
+                    font-size: 2.6rem;
+                }
+            }
+        }
+    }
+}

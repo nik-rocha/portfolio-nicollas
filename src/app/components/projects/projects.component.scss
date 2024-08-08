@@ -85,3 +85,37 @@ main {
         flex-direction: column;
     }
 }
+
+@media (max-width: 560px) {
+    main {
+        height: 130%;
+
+        h1 {
+            font-size: 3.4rem;
+        }
+    }
+
+    .projects-display {
+        gap: 8rem;
+
+        .display-row {
+            gap: 8rem;
+        
+            .single-display {
+
+                img {
+                    width: 85%;
+                }
+            
+                #project-title {
+                    font-size: 1.8rem;
+                }
+
+                button {
+                    padding: 15px;
+                    font-size: 1.8rem;
+                }
+            }
+        }
+    }
+}
