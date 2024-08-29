@@ -3,6 +3,7 @@ import { MatDialog, MatDialogModule } from '@angular/material/dialog'
 import { CommonModule } from '@angular/common';
 import { QuirinosDialogComponent } from '../dialogs/quirinos-dialog/quirinos-dialog.component';
 import { EquivalerDialogComponent } from '../dialogs/equivaler-dialog/equivaler-dialog.component';
+import { EducarDialogComponent } from '../dialogs/educar-dialog/educar-dialog.component';
 
 @Component({
   selector: 'app-projects',
@@ -27,6 +28,16 @@ export class ProjectsComponent {
 
   openEquivalerDialog(): void {
     const dialogRef = this.dialog.open(EquivalerDialogComponent, {
+      width: 'auto',
+    });
+
+    dialogRef.afterClosed().subscribe(result => {
+      console.log('O diálogo foi fechado.')
+    })
+  }
+
+  openEducarDialog(): void {
+    const dialogRef = this.dialog.open(EducarDialogComponent, {
       width: 'auto',
     });
 
