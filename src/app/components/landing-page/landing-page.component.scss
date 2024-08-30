@@ -75,6 +75,10 @@ main {
 }
 
 @media (max-width: 560px) {
+    body {
+        overflow-x: hidden;
+    }
+
     main {
         height: 42vh;
     }
