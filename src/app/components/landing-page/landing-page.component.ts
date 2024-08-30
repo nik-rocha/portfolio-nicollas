@@ -7,6 +7,7 @@ import { faGithub } from '@fortawesome/free-brands-svg-icons';
 import { ProjectsComponent } from '../projects/projects.component';
 import { AboutMeComponent } from "../about-me/about-me.component";
 import * as AOS from 'aos';
+import { Renderer2 } from '@angular/core';
 
 @Component({
   selector: 'app-landing-page',
@@ -17,10 +18,13 @@ import * as AOS from 'aos';
   styleUrl: './landing-page.component.scss'
 })
 export class LandingPageComponent implements OnInit {
+  constructor (private _renderer: Renderer2) {}
+
   faLinkedin = faLinkedin;
   faGithub = faGithub;
 
   ngOnInit(): void {
+    this._renderer.setStyle(document.body, 'overflow-x', 'hidden');
     AOS.init({
       duration: 750, // duração em milissegundos
       easing: 'ease-in-out', // tipo de easing
