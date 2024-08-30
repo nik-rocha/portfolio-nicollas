@@ -28,15 +28,16 @@ main {
 }
 
 .projects-display {
-    margin-top: 2.5rem;
+    margin: 2.5rem 0 8rem 0;
     display: flex;
     align-items: center;
     flex-direction: column;
     gap: 16rem;
+    width: 100%;
 
     .display-row {
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
         gap: 16rem;
 
         .single-display {
@@ -44,6 +45,8 @@ main {
             align-items: center;
             justify-content: center;
             flex-direction: column;
+            width: 715px;
+            height: 616px;
 
             #project-title {
                 font-size: 2.8rem;
@@ -78,7 +81,7 @@ main {
 }
 
 @media (max-width: 1430px) {
-    #display-top, #display-bottom {
+    .display-row {
         display: flex;
         align-items: center;
         justify-content: center;
@@ -102,6 +105,8 @@ main {
             gap: 8rem;
         
             .single-display {
+                width: 70%;
+                height: 70%;
 
                 img {
                     width: 85%;
