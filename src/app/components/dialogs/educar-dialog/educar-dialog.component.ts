@@ -23,6 +23,7 @@ export class EducarDialogComponent implements OnInit {
       new ImageItem({ src: 'educar_screenshots/educar_3.png', thumb: 'educar_screenshots/educar_3.png' }),
       new ImageItem({ src: 'educar_screenshots/educar_4.png', thumb: 'educar_screenshots/educar_4.png' }),
       new ImageItem({ src: 'educar_screenshots/educar_5.png', thumb: 'educar_screenshots/educar_5.png' }),
+      new ImageItem({ src: 'educar_screenshots/educar_journeys.png', thumb: 'educar_screenshots/educar_journeys.png' }),
       new ImageItem({ src: 'educar_screenshots/educar_6.png', thumb: 'educar_screenshots/educar_6.png' }),
       new ImageItem({ src: 'educar_screenshots/educar_7.png', thumb: 'educar_screenshots/educar_7.png' }),
       new ImageItem({ src: 'educar_screenshots/educar_8.png', thumb: 'educar_screenshots/educar_8.png' })
